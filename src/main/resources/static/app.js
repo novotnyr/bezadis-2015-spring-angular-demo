@@ -23,6 +23,7 @@
         HateService
             .save($scope.newHate, function(newHate) {
                 $scope.hates.push(newHate);
+                $scope.newHate = {};
             })
         }
     }
