@@ -19,9 +19,9 @@
             $scope.hates = response;
         });
 
-        $scope.addCity = function() {
-        CityService
-            .save($scope.newCity, function(newHate) {
+        $scope.addHate = function() {
+        HateService
+            .save($scope.newHate, function(newHate) {
                 $scope.hates.push(newHate);
             })
         }
